@@ -1,3 +1,5 @@
+import Chatbot from './Chatbot';
+
 export default function Me() {
   return (
     <div className="container mt-5 page-container">
@@ -11,6 +13,15 @@ export default function Me() {
       <p className="mt-4">
         🚀 Passionate about solving problems and building impactful software. Currently diving deep into AI product development — especially where Large Language Models meet real users.
       </p>
+      <a
+        href="/Janakan Sureshraj Resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-outline-light resume-btn mt-4"
+      >
+        📄 View Janakan's Resume
+      </a>
+
     </div>
   );
 }

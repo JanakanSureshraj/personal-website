@@ -1,6 +1,10 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
 body {
   background-color: black;
-  color: #b3b3b3;
+  color: #cdcdcd;
   font-family: 'Courier New', Courier, monospace;
   margin: 0;
   padding: 0;
@@ -12,17 +16,17 @@ h1, h2, h3 {
 }
 
 h2 {
-  color: #bfbfbf;
+  color: #cdcdcd;
 }
 h5{
   font-weight: bold;
 }
 a {
-  color: #b3b3b3;
+  color: #cdcdcd;
   text-decoration: none;
 }
 p{
-  color: #b3b3b3;
+  color: #cdcdcd;
   font-size: 1.1rem;
 }
 li{
@@ -31,15 +35,15 @@ li{
 
 .navbar {
   background-color: #000;
-  border-bottom: 1px solid #bfbfbf;
+  border-bottom: 1.5px solid #ffbb00;
 }
 
 .footer {
   background-color: #000;
-  color: #b3b3b3;
+  color: #cdcdcd;
   padding: 1rem 0;
   text-align: center;
-  border-top: 1px solid #bfbfbf;
+  border-top: 1px solid #cdcdcd;
 }
 
 .click-effect {
@@ -52,3 +56,4 @@ li{
   color: rgb(255, 226, 6);
   transition: color 0.1s ease;
 }
+

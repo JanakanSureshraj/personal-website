@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Me from './components/Me';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
+import Chatbot from './components/Chatbot';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/skills" element={<Skills />} />
         </Routes>
+        <Chatbot />
         <Footer />
       </div>
     </Router>
