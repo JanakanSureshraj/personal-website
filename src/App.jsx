@@ -1,6 +1,7 @@
 import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import janakanLogo from "/public/me.JPG";
 
 const experience = [
   {
@@ -9,7 +10,14 @@ const experience = [
     company: "Best Buy Canada",
     description:
       "Building backend integrations and APIs as part of a modernization effort for a large-scale returns, repairs and logistics platform.",
-    tags: ["Java", "Spring Boot", "REST APIs", "Microservices Architecture", "Docker", "OpenShift"],
+    tags: [
+      "Java",
+      "Spring Boot",
+      "REST APIs",
+      "Microservices Architecture",
+      "Docker",
+      "OpenShift",
+    ],
   },
   {
     period: "Sep 2024 — Aug 2025",
@@ -17,7 +25,14 @@ const experience = [
     company: "VDart AI Labs",
     description:
       "Built a generative-AI recruitment bot spanning speech transcription, resume analysis, data processing and a responsive web interface.",
-    tags: ["Python", "FastAPI", "WhisperX", "Llama 3", "Hugging Face", "MongoDB"],
+    tags: [
+      "Python",
+      "FastAPI",
+      "WhisperX",
+      "Llama 3",
+      "Hugging Face",
+      "MongoDB",
+    ],
   },
   {
     period: "Oct 2023 — Sep 2024",
@@ -45,14 +60,17 @@ const projects = [
     description:
       "A hands-on robotics project exploring camera-based perception, lightweight machine learning and autonomous navigation.",
     tags: ["Computer Vision", "Python", "Robotics", "Embedded"],
+    github: "NONE",
   },
   {
     number: "02",
-    title: "Minute-Mail",
+    title: "WhatsApp Agent",
     status: "Built",
     description:
-      "An AI-assisted email tool designed to generate context-sensitive messages and reduce repetitive writing work.",
-    tags: ["Python", "Flask", "OpenAI", "SQL"],
+      "A WhatsApp-based AI agent that can answer questions, provide information and assist with tasks through natural language conversation.",
+    tags: ["Python", "FastAPI", "OpenAI", "Twilio", "Numpy", "Hugging Face"],
+    github:
+      "https://github.com/JanakanSureshraj/WhatsApp-Agent-AI-Eng",
   },
   {
     number: "03",
@@ -61,6 +79,37 @@ const projects = [
     description:
       "A neural-network based electricity forecasting project focused on time-series modelling, preprocessing and model evaluation.",
     tags: ["R", "Neural Networks", "Time Series"],
+    github:
+      "https://github.com/JanakanSureshraj/NeuralNetworks-TimeSeriesForecasting",
+  },
+  {
+    number: "04",
+    title: "Java OOP Paradigm",
+    status: "Built",
+    description:
+      "A Java-based application that demonstrates object-oriented programming principles, including encapsulation, inheritance and polymorphism.",
+    tags: ["Java", "Java Swing", "OOP", "Design Patterns"],
+    github:
+      "https://github.com/JanakanSureshraj/Java-Object-Oriented-Programming",
+  },
+  {
+    number: "05",
+    title: "Unsupervised ML Algorithms",
+    status: "Built",
+    description:
+      "A collection of unsupervised machine learning projects that explore clustering, dimensionality reduction and anomaly detection techniques.",
+    tags: ["Data Mining", "Clustering", "PCA", "R"],
+    github: "https://github.com/JanakanSureshraj/Unsupervised-Algorithms",
+  },
+  {
+    number: "06",
+    title: "Quantitative Forecasting in R",
+    status: "Built",
+    description:
+      "A project that involved building and evaluating statistical models for forecasting using R programming language.",
+    tags: ["R", "Forecasting", "Statistical Models"],
+    github:
+      "https://github.com/JanakanSureshraj/Quantitative-Forecasting-Using-R",
   },
 ];
 
@@ -113,7 +162,7 @@ function App() {
     <div className="site-shell">
       <header className="topbar">
         <a className="wordmark" href="#top" aria-label="Janakan home">
-          <img src="public/me.JPG" alt="Home" />
+          <img src={janakanLogo} alt="Janakan" />
         </a>
         <nav aria-label="Main navigation">
           <a href="#work">Work</a>
@@ -289,7 +338,15 @@ function App() {
                     <Tag key={tag}>{tag}</Tag>
                   ))}
                 </div>
-                <span className="project-arrow">↗</span>
+                <a
+                  className="project-arrow"
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`View ${project.title} on GitHub`}
+                >
+                  ↗
+                </a>
               </article>
             ))}
           </div>

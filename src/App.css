@@ -41,11 +41,19 @@ button, a { -webkit-tap-highlight-color: transparent; }
   transform: translateY(-1px);
 }
 
-.wordmark { font-family: 'DM Mono', monospace; font-size: 15px; border: 1px solid var(--line); width: 34px; height: 34px; display: grid; place-items: center; }
+.wordmark {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
 .wordmark img {
   width: 100%;
   height: 100%;
-  object-fit: contain;   /* keeps the image proportional without distortion */
+  object-fit: cover;
 }
 
 .status { justify-self: end; font: 11px 'DM Mono', monospace; color: var(--muted); display: flex; align-items: center; gap: 8px; }
@@ -62,7 +70,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 .hero h1 { margin: 0; font-size: clamp(64px, 10vw, 132px); line-height: .86; letter-spacing: -.075em; font-weight: 800; }
 em { font-style: normal; color: var(--muted); }
-.hero-lede { max-width: 610px; margin: 42px 0 32px; font-size: clamp(18px, 2vw, 24px); line-height: 1.55; color: #c1bfb9; }
+.hero-lede { max-width: 610px; margin: 42px 0 32px; font-size: clamp(18px, 2vw, 24px); line-height: 1.55; color: #d0cec7; }
 .hero-actions { display: flex; gap: 10px; flex-wrap: wrap; }
 .button { display: inline-flex; align-items: center; gap: 16px; padding: 14px 18px; border: 1px solid var(--line); font: 12px 'DM Mono', monospace; transition: .2s ease; }
 .button-social {
@@ -138,7 +146,19 @@ em { font-style: normal; color: var(--muted); }
 .project-card h3 { margin: 70px 0 16px; font-size: 28px; letter-spacing: -.04em; }
 .project-card p { color:#b0aea8; line-height: 1.7; font-size: 14px; margin: 0 0 24px; }
 .project-card .tags { margin-top: auto; padding-right: 28px; }
-.project-arrow { position: absolute; right: 26px; bottom: 26px; color: var(--accent); font-size: 18px; }
+.project-arrow {
+  position: absolute;
+  right: 26px;
+  bottom: 26px;
+  color: var(--accent);
+  font-size: 18px;
+  transition: transform .2s ease, color .2s ease;
+}
+
+.project-arrow:hover {
+  color: #ffffff;
+  transform: translate(2px, -2px);
+}
 
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; padding-top: 70px; }
 .about-copy { max-width: 600px; }
