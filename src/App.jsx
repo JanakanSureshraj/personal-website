@@ -198,7 +198,7 @@ function App() {
 
               <a
                 className="button button-ghost"
-                href="/Janakan Sureshraj Resume.pdf"
+                href="/Janakan-Resume.pdf"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -461,7 +461,7 @@ function App() {
                 </a>
 
                 <a
-                  href="/Janakan Sureshraj Resume.pdf"
+                  href="/Janakan-Resume.pdf"
                   target="_blank"
                   rel="noreferrer"
                 >
