@@ -69,8 +69,7 @@ const projects = [
     description:
       "A WhatsApp-based AI agent that can answer questions, provide information and assist with tasks through natural language conversation.",
     tags: ["Python", "FastAPI", "OpenAI", "Twilio", "Numpy", "Hugging Face"],
-    github:
-      "https://github.com/JanakanSureshraj/WhatsApp-Agent-AI-Eng",
+    github: "https://github.com/JanakanSureshraj/WhatsApp-Agent-AI-Eng",
   },
   {
     number: "03",
@@ -179,16 +178,14 @@ function App() {
       <main id="top">
         <section className="hero section-pad">
           <div className="hero-copy">
-            <p className="eyebrow">
-              BACKEND SYSTEMS · ARTIFICIAL INTELLIGENCE · DATA
-            </p>
+            <p className="eyebrow">BACKEND SYSTEMS · AI · DATA</p>
             <h1>
               Janakan
               <br />
               <em>Sureshraj.</em>
             </h1>
             <p className="hero-lede">
-              Software developer building reliable systems today, while
+              Software developer building reliable systems while
               exploring the intersection of AI + robotics 🤖
             </p>
             <div className="hero-actions">
@@ -196,34 +193,36 @@ function App() {
                 Explore my work <span>↘</span>
               </a>
 
-              <a
-                className="button button-ghost"
-                href="/Janakan-Resume.pdf"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Resume <span>↗</span>
-              </a>
+              <div className="hero-secondary-actions">
+                <a
+                  className="button button-ghost"
+                  href="/Janakan-Resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Resume <span>↗</span>
+                </a>
 
-              <a
-                className="button button-social"
-                href="https://www.linkedin.com/in/janakansureshraj"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="LinkedIn"
-              >
-                <FontAwesomeIcon icon={faLinkedinIn} />
-              </a>
+                <a
+                  className="button button-social"
+                  href="https://www.linkedin.com/in/janakansureshraj"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <FontAwesomeIcon icon={faLinkedinIn} />
+                </a>
 
-              <a
-                className="button button-social"
-                href="https://github.com/janakansureshraj"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="GitHub"
-              >
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
+                <a
+                  className="button button-social"
+                  href="https://github.com/janakansureshraj"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </div>
             </div>
           </div>
           <div className="hero-aside" aria-label="Personal profile summary">
@@ -460,11 +459,7 @@ function App() {
                   GitHub <span>↗</span>
                 </a>
 
-                <a
-                  href="/Janakan-Resume.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="/Janakan-Resume.pdf" target="_blank" rel="noreferrer">
                   Resume <span>↗</span>
                 </a>
               </div>
