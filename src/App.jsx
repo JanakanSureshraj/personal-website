@@ -186,7 +186,7 @@ function App() {
             </h1>
             <p className="hero-lede">
               Software developer building reliable systems while
-              exploring the intersection of AI and robotics
+              exploring the intersection of AI and robotics.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#work">
