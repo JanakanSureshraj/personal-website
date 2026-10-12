@@ -9,13 +9,13 @@ import './App.css';
 
 const experience = [
   {
-    period: 'Jun 2026 — Present', role: 'Software Developer I', company: 'Best Buy Canada', location: 'Toronto, ON · Hybrid / Remote',
+    period: 'Jun 2026 — Present', role: 'Software Developer I', company: 'Best Buy Canada', location: 'Toronto, ON · Remote',
     description: 'Contributing to backend services and integrations as part of a modernization effort for a large-scale returns and repairs platform. Working across APIs, messaging and legacy-system integration.',
     technologies: ['Java', 'Spring Boot', 'REST APIs', 'Microservices', 'Azure Service Bus', 'RabbitMQ', 'OpenShift']
   },
   {
-    period: 'Sep 2024 — Aug 2025', role: 'AI / Data Co-op', company: 'VDart', location: 'Remote',
-    description: 'Contributed to an AI-assisted recruitment workflow spanning speech transcription, resume analysis, data processing and a web interface.',
+    period: 'Sep 2024 — Aug 2025', role: 'Software Engineer Co-op', company: 'VDart – AI / Data Team ', location: 'GA, USA · Remote',
+    description: 'Contributed to a generative AI-assisted recruitment workflow spanning speech transcription, resume analysis, data processing and a web interface.',
     technologies: ['Python', 'FastAPI', 'WhisperX', 'LLMs', 'MongoDB']
   },
   {
@@ -24,15 +24,15 @@ const experience = [
     technologies: ['React', 'JavaScript', 'Python', 'SQL']
   },
   {
-    period: 'Sep 2022 — Jul 2023', role: 'Research Assistant- Applied AI', company: 'University of Westminster', location: 'London, UK · Remote',
+    period: 'Sep 2022 — Jul 2023', role: 'Research Assistant – Applied AI', company: 'University of Westminster', location: 'London, UK · Remote',
     description: 'Supported programming workshops and helped develop an AI-focused prototype for the Microsoft Imagine Cup 2023.',
     technologies: ['Python', 'Java', 'R', 'AI prototyping']
   }
 ];
 
 const posts = [
-  { slug: 'understanding-gradient-descent', published: false, title: 'Understanding Gradient Descent', date: '2026-10-12', category: 'Machine Learning', description: 'A compact note on how gradient descent updates model parameters to reduce a loss function.', file: '/articles/understanding-gradient-descent.md' },
-  { slug: 'notes-on-robot-perception', published: false, title: 'Notes on Robot Perception', date: '2026-10-12', category: 'Robotics', description: 'A starting point for thinking about how robots turn sensor data into a useful representation of the world.', file: '/articles/notes-on-robot-perception.md' }
+  { slug: 'understanding-gradient-descent', published: true, title: 'Understanding Gradient Descent', date: '2026-10-12', category: 'Machine Learning', description: 'A compact note on how gradient descent updates model parameters to reduce a loss function.', file: '/articles/understanding-gradient-descent.md' },
+  { slug: 'notes-on-robot-perception', published: true, title: 'Notes on Robot Perception', date: '2026-10-10', category: 'Robotics', description: 'A starting point for thinking about how robots turn sensor data into a useful representation of the world.', file: '/articles/notes-on-robot-perception.md' }
 ];
 
 function MoonIcon({ isDark }) {
@@ -82,8 +82,7 @@ function Experience() {
           <div className="technology-list" aria-label="Technologies">{item.technologies.map((tech) => <span key={tech}>{tech}</span>)}</div>
         </div>
       </article>)}
-    </section>
-    <section className="education-note"> <a className="text-link" href="/Janakan%20Sureshraj%20Resume.pdf" target="_blank" rel="noreferrer">View Resume <span aria-hidden="true">↗</span></a></section>
+     </section>
   </main>;
 }
 
