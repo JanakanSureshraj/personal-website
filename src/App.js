@@ -9,7 +9,7 @@ import './App.css';
 
 const experience = [
   {
-    period: 'Jun 2026 — Present', role: 'Software Developer I', company: 'Best Buy Canada', location: 'Toronto, ON · Remote',
+    period: 'Jun 2026 — Present', role: 'Software Developer', company: 'Best Buy Canada', location: 'Vancouver, BC · Remote',
     description: 'Contributing to backend services and integrations as part of a modernization effort for a large-scale returns and repairs platform. Working across APIs, messaging and legacy-system integration.',
     technologies: ['Java', 'Spring Boot', 'REST APIs', 'Microservices', 'Azure Service Bus', 'RabbitMQ', 'OpenShift']
   },
@@ -60,7 +60,7 @@ function Home() {
     <div className="home-content">
       <p className="eyebrow">SOFTWARE · SYSTEMS · AI</p>
       <h1>Janakan<br />Sureshraj<span className="period">.</span></h1>
-      <p className="role-line">Software Developer exploring AI & Robotics</p>
+      <p className="role-line">Software Engineer exploring AI & Robotics</p>
       <div className="home-links">
         <a href="https://linkedin.com/in/janakansureshraj" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗&#xFE0E;</span></a>
         <a href="https://github.com/janakansureshraj" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗&#xFE0E;</span></a>
