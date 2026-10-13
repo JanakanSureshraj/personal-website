@@ -62,8 +62,8 @@ function Home() {
       <h1>Janakan<br />Sureshraj<span className="period">.</span></h1>
       <p className="role-line">Software Developer exploring AI & Robotics</p>
       <div className="home-links">
-        <a href="https://linkedin.com/in/janakansureshraj" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-        <a href="https://github.com/janakansureshraj" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <a href="https://linkedin.com/in/janakansureshraj" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗&#xFE0E;</span></a>
+        <a href="https://github.com/janakansureshraj" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗&#xFE0E;</span></a>
       </div>
     </div>
     <div className="home-footer"><span>Toronto, Canada</span><span>Documenting my learnings...</span></div>
@@ -97,7 +97,7 @@ function Blog() {
     <section className="post-list" aria-label="Articles">
       {sortedPosts.length === 0 ? <p className="empty-posts">No notes published yet. New writing will appear here.</p> : sortedPosts.map((post) => <article className="post-row" key={post.slug}>
         <div className="post-date">{formatDate(post.date)}</div>
-        <div className="post-main"><Link className="post-title" to={`/blog/${post.slug}`}>{post.title}<span aria-hidden="true">↗</span></Link><p>{post.description}</p><span className="post-category">{post.category}</span></div>
+        <div className="post-main"><Link className="post-title" to={`/blog/${post.slug}`}>{post.title}<span aria-hidden="true">↗&#xFE0E;</span></Link><p>{post.description}</p><span className="post-category">{post.category}</span></div>
       </article>)}
     </section>
     <p className="blog-footnote">A living notebook. New notes will appear here as they're written.</p>
