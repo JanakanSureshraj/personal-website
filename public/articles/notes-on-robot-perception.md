@@ -1,5 +1,4 @@
-A robot does not experience the world the way a person does. It receives measurements from sensors—images, distances, inertial readings or wheel motion—and must turn those measurements into a useful estimate of its surroundings.
-
+A robot does not experience the world the way a person does. It receives measurements from sensors such as images, distances, inertial readings or wheel motion, and must turn those measurements into a useful estimate of its surroundings.
 ## From sensors to a representation
 
 A simplified perception pipeline looks like this:
