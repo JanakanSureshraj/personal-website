@@ -32,7 +32,8 @@ const experience = [
 
 const posts = [
   { slug: 'understanding-gradient-descent', published: true, title: 'Understanding Gradient Descent', date: '2026-10-12', category: 'Machine Learning', description: 'A compact note on how gradient descent updates model parameters to reduce a loss function.', file: '/articles/understanding-gradient-descent.md' },
-  { slug: 'notes-on-robot-perception', published: true, title: 'Notes on Robot Perception', date: '2026-10-10', category: 'Robotics', description: 'A starting point for thinking about how robots turn sensor data into a useful representation of the world.', file: '/articles/notes-on-robot-perception.md' }
+  { slug: 'notes-on-robot-perception', published: true, title: 'Notes on Robot Perception', date: '2026-10-10', category: 'Robotics', description: 'A starting point for thinking about how robots turn sensor data into a useful representation of the world.', file: '/articles/notes-on-robot-perception.md' }, 
+  { slug: 'understanding-message-backlogs', published: true, title: 'Understanding Message Backlogs', date: '2026-10-19', category: 'Distributed Systems', description: 'A note on how message backlogs can impact system reliability and performance.', file: '/articles/understanding-message-backlogs.md' }
 ];
 
 function MoonIcon({ isDark }) {
