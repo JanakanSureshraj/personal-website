@@ -33,7 +33,9 @@ const experience = [
 const posts = [
   { slug: 'understanding-gradient-descent', published: true, title: 'Understanding Gradient Descent', date: '2026-10-12', category: 'Machine Learning', description: 'A compact note on how gradient descent updates model parameters to reduce a loss function.', file: '/articles/understanding-gradient-descent.md' },
   { slug: 'notes-on-robot-perception', published: true, title: 'Notes on Robot Perception', date: '2026-10-10', category: 'Robotics', description: 'A starting point for thinking about how robots turn sensor data into a useful representation of the world.', file: '/articles/notes-on-robot-perception.md' }, 
-  { slug: 'understanding-message-backlogs', published: true, title: 'Understanding Message Backlogs', date: '2026-10-19', category: 'Distributed Systems', description: 'A note on how message backlogs can impact system reliability and performance.', file: '/articles/understanding-message-backlogs.md' }
+  { slug: 'understanding-message-backlogs', published: true, title: 'Understanding Message Backlogs', date: '2026-10-19', category: 'Distributed Systems', description: 'A note on how message backlogs can impact system reliability and performance.', file: '/articles/understanding-message-backlogs.md' }, 
+  { slug: 'clustering-practical-guide-1', published: true, title: 'Guide on Clustering: 1- Hierarchical', date: '2026-10-29', category: 'Unsupervised Machine Learning', description: 'A concise guide to hierarchical clustering and visualization.', file: '/articles/clustering-practical-guide-1.md' },
+  { slug: 'clustering-practical-guide-2', published: true, title: 'Guide on Clustering: 2- Partitioning', date: '2026-10-30', category: 'Unsupervised Machine Learning', description: 'Notes on K-means, cluster evaluation, and preprocessing techniques.', file: '/articles/clustering-practical-guide-2.md' } 
 ];
 
 function MoonIcon({ isDark }) {
