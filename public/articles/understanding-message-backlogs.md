@@ -6,14 +6,14 @@ Recently, we encountered a production issue where an adaptor delivered approxima
 
 This highlighted an important distinction: **message delivery and message consumption are separate aspects of system reliability.** When consumers stop processing messages, backlogs can grow, storage resources can be consumed, and downstream workflows can be delayed. Depending on the messages' business value and retention requirements, purging may be an option, but it should be approached carefully to avoid losing events that still need to be processed.
 
+## Few Important Terms
 
 | Term | Description |
-| --- | --- |
-| Namespace    | A container that groups messaging resources, including queues, topics, and subscriptions.                       |
-| Queue        | A point-to-point messaging entity that holds messages until they are received and processed by a consumer.      |
-| Topic        | A publish-subscribe messaging entity that allows publishers to send messages to multiple subscriptions.         |
-| Subscription | A logical message stream within a topic that holds messages for a particular subscriber to receive and process. |
-
+|---|---|
+| **Namespace** | A container that groups messaging resources, including queues, topics, and subscriptions. |
+| **Queue** | A point-to-point messaging entity that holds messages until they are received and processed by a consumer. |
+| **Topic** | A publish-subscribe messaging entity that allows publishers to send messages to multiple subscriptions. |
+| **Subscription** | A logical message stream within a topic that holds messages for a particular subscriber to receive and process. |
 
 ## Reflection
 
