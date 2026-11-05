@@ -13,9 +13,7 @@ updates centroids to reduce the within-cluster sum of squares.
 1. **Prepare the data.** Handle missing values and scale numeric features when they use different units or ranges.
 2. **Choose candidate values for (K).** Common methods include the Elbow method, average silhouette score, and Gap Statistic.
 3. **Fit the model.** Use multiple initializations to reduce the risk of a poor starting point.
-4. **Compare candidate solutions.** Consider cluster compactness,
-
-   separation, interpretability, and the needs of the task.
+4. **Compare candidate solutions.** Consider cluster compactness, separation, interpretability, and the needs of the task.
 5. **Visualize the clusters.** Use cluster plots where possible. For high-dimensional data, a two-dimensional projection can help, but may not preserve every relationship.
 6. **Validate the result.** Check whether the clusters are meaningful and stable for the intended use.
 
