@@ -112,7 +112,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .markdown-body code { font-family: 'DM Mono', monospace; font-size: .86em; background: var(--chip); border-radius: 3px; padding: 2px 5px; }
 .markdown-body pre { overflow-x: auto; padding: 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; margin: 20px 0 24px; line-height: 1.7; }
 .markdown-body pre code { background: transparent; padding: 0; }
-.markdown-body table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 12px; }
+.markdown-body table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 11px; }
 .markdown-body th, .markdown-body td { padding: 10px 12px; text-align: left; border: 1px solid var(--line); }
 .markdown-body th { background: var(--chip); font-weight: 600; }
 .markdown-body .katex-display { overflow-x: auto; overflow-y: hidden; padding: 8px 0; }
@@ -147,7 +147,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .article-header { margin-bottom: 34px; }
   .article-header h1 { font-size: clamp(39px, 10vw, 58px); }
   .markdown-body { font-size: 14px; }
-  .markdown-body table { display: block; overflow-x: auto; white-space: nowrap; }
+  .markdown-body table { display: block; overflow-x: auto; white-space: nowrap; font-size: 12px; }
   .article-footer { margin-top: 38px; }
   .site-footer { min-height: 62px; font-size: 8px; }
 }
